@@ -1,0 +1,4 @@
+<div class="input-wrapper">
+    <input [ngClass]="{'input-invalid': !isValid}" [type]="inputType" [placeholder]="placeholder" [(ngModel)]="value"
+        [required]="isRequired" (keyup)="setValue.emit(value)" [value]="value" />
+</div>
